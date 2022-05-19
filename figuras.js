@@ -11,7 +11,7 @@ function perimetroCuadrado(lado) {
 
 function areaCuadrado(lado) {
     return  lado * lado;
-}
+};
 // console.log(`El area del cuadrado es ${areaCuadrada}cm^2`);
 console.groupEnd();
 
@@ -94,21 +94,21 @@ const AlturaTrianguloIsosceles = (ladoTriangulo1,ladoTriangulo2,base) => {
 
     const divisionBase = base/2;
     if(base === ladoTriangulo1 && base === ladoTriangulo2){
-        alert("Lo siento pero este triangulo no parece ser Isosceles, mas bien un equilatero"); 
+        resultTrianguloIsosceles.innerText = `Lo siento pero este triangulo no parece ser Isosceles, mas bien un equilatero`; 
     } else {
         if(ladoTriangulo1 > divisionBase && ladoTriangulo1 === ladoTriangulo2) {
             const resultadoFormula = (ladoTriangulo1 ** 2) - (divisionBase ** 2);
             const raizCuadrada = Math.sqrt(resultadoFormula);
-            alert(" respuesta es: " + raizCuadrada + "cm");
+            resultTrianguloIsosceles.innerText = `respuesta es ${raizCuadrada} cm`;
         }
         else if(ladoTriangulo1 < divisionBase && ladoTriangulo1 === ladoTriangulo2){
             const resultadoFormula = (ladoTriangulo1 ** 2) - (divisionBase ** 2);
             const raizCuadrada = Math.sqrt(resultadoFormula);
-            alert("la base del triangulo no puede ser mas grande que la de sus lados "
-            + "asi que posiblemente tengas un error");
+            resultTrianguloIsosceles.innerText = `la base del triangulo no puede ser mas grande que la de sus lados 
+            asi que posiblemente tengas un error`;
         }
         else  {
-            alert("Lo siento pero este triangulo no parece ser Isosceles, ya que sus lados no son iguales");        
+            resultTrianguloIsosceles.innerText = `Lo siento pero este triangulo no parece ser Isosceles, ya que sus lados no son iguales`;      
         };
     };
 }; 
@@ -146,17 +146,22 @@ console.groupEnd();
 function calcularPerimetroCuadrado () {
     const input = document.getElementById("InputCuadrado");
     const value = input.value; //asi obtengo el valor del usuario desde javaScript
+    const valueNumber = parseInt(value);
     
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro + "cm");
-};
+    const perimetro = perimetroCuadrado(valueNumber);
+    resultso_square.innerText = `El perímetroes es: \n ${perimetro}`;     
+    console.log(perimetro)
+}
 
 function calcularAreaCuadrado () {
     const input = document.getElementById("InputCuadrado");
     const value = input.value; //asi obtengo el valor del usuario desde javaScript
+    const valueNumber = parseInt(value);
     
-    const area = areaCuadrado(value);
-    alert(area + "cm^2");
+    const area = areaCuadrado(valueNumber);
+    resultso_square.innerText = `El áre es: \n ${area}`; 
+    console.log(area);
+
 };
 
  function calcularPerimetroTriangulo () {
@@ -171,8 +176,7 @@ function calcularAreaCuadrado () {
      const valueBaseNumber = parseInt(valueBase);
 
      const perimetro = perimetroTriangulo(valueLado1Number,valueLado2Number,valueBaseNumber);
-     alert(perimetro + "cm");
-     console.log(typeof perimetro);
+     resultPerimetro_triangle.innerText = `El perimetro es ${perimetro}`
  };
 
  function calcularAreaTriangulo () {
@@ -184,7 +188,7 @@ function calcularAreaCuadrado () {
      const valueBaseNumber = parseInt(valueBase);
 
      const area = areaTriangulo(valueBaseNumber, valueAlturaNumber);
-     alert(area + "cm^2");
+     resultArea_triangle.innerText = `El area es: ${area}`
  };
 
  function calcularDiametroCirculo() {
@@ -193,7 +197,7 @@ function calcularAreaCuadrado () {
      const valueRadioNumber = parseInt(valueRadio);
 
      const diametro = diametroCirculo(valueRadioNumber);
-     alert(diametro + "cm");
+     resultsCicle.innerText = `El diametro es ${diametro} cm`;
  };
 
  function calcularPerimetroCirculo() {
@@ -203,7 +207,7 @@ function calcularAreaCuadrado () {
 
     const diametro = diametroCirculo(valueRadioNumber);
     const perimetro = diametro * PI;
-    alert(perimetro + "cm");    
+    resultsCicle.innerText = `El perimetro es ${perimetro} cm`;
 
  };
 
@@ -213,7 +217,7 @@ function calcularAreaCuadrado () {
     const valueRadioNumber = parseInt(valueRadio);
 
     const area = areaCirculo(valueRadioNumber);
-    alert(area + "cm^2");
+    resultsCicle.innerText = `El area es ${area} cm^2`;
 
  };
 

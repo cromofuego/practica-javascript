@@ -1,0 +1,210 @@
+*{
+    background-color: #f1ece4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #021926;
+    --secondary-color: #721B08;
+    --option-color-1: #114B55;
+    --option-color-2: #7E6525;
+    --option-color-3: #C6CC7B;   
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+p {
+    font-weight: 500;
+    text-align: center;    
+} 
+.header-container_h1_p {
+    margin: 1.0rem 1.5rem;
+}
+.header-container_h1_p  h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 3.8rem;
+    text-align: center;
+}
+.header-container_h1_p > p {
+    color: #05314C;
+    margin-top: 1.0rem;
+    font-size: 2.0rem;
+}
+/* estilos contenedor cuadrado */
+.cointer-square {
+    border: solid var(--primary-color);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.formSquare-container_label_input-button {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.cointer-square > h2 { 
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.cointer-square > picture {
+    margin-top: 1rem;
+    height: 6rem;
+    max-width: 28rem;
+}
+picture > img {
+    height: 100%;
+    width: 100%;
+}
+.label-inputCuadrado {
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.container-input_square {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.container-input_square:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;   
+}
+.container-input_square::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.buttons-container_1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.button-perimetro_square {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 24%;
+    font-size: 2.4rem;
+    width: 50%;    
+    height: 10.0rem;
+    margin-right: 0.5rem;
+    padding: 2%;
+
+}
+.button-area_square {  
+    color:  #ede7dd;
+    cursor: pointer; 
+    background-color: #186977;
+    border: none;   
+    border-radius: 24%;  
+    font-size: 2.4rem;
+    width: 50%;          
+    height: 10.0rem;
+    margin-left: 0.5rem; 
+    padding: 2%;
+}
+.container-resultados_square {
+    display: flex;
+    justify-content: center;
+}
+.container-resultados_square > p {
+    font-size: 2.5rem;
+}
+/* estilos contenedor triangulo */
+.cointer-triangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.cointer-triangle h3 {    
+    margin: 1.0rem 1.5rem;
+    text-align: center;
+}
+.formTriangulo-container_label_input-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formTriangulo-container_label_input-button > label {
+    text-align: center;
+    font-size: 1.4rem;
+}
+/* estilos contenedor Itriangulo Isosceles */
+.cointer-isoscelesTriangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.cointer-isoscelesTriangle h4 {
+    margin: 1.0rem 1.5rem;
+    text-align: center;
+}
+.formTrianguloIsosceles-container_label_input-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formTrianguloIsosceles-container_label_input-button > label {
+    text-align: center;
+    font-size: 1.4rem;
+}
+/* estilos contenedor Circulo */
+.container-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-circle h5 {
+    margin: 1.0rem 1.5rem;
+    text-align: center;
+}
+.formCincle-container_label_input-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formCincle-container_label_input-button > label {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+
+
+

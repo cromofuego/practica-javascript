@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promedio</title>
+</head>
+<body>
+    <h1>Promedio</h1>
+
+    <section>
+        <form>
+            <label for="input-add">
+                Escribe los datos para ser agregados aqui :
+            </label>
+
+            <input id="input-add" type="number">
+
+            <button type="button" onclick="agregarDato()"> 
+                Agregar
+            </button>
+            <button type="button" onclick="calcularMediaAritmetica()"> 
+                Calcular promedio de todos los datos agregados
+            </button>
+        </form>
+
+        <p id="resultadoCalculoPromedio">
+
+        </p>
+
+        <p id="datosAgregadosUser">
+
+        </p>
+
+    </section>
+
+    
+
+    <script src="./promedio.js"></script>
+</body>
+</html>
