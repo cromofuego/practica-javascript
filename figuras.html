@@ -14,17 +14,22 @@
     <div class="main-container">
 
         <header class="header-container_h1_p">
+            <a href="./index.html" class="a-container_picture_home" >
+                <picture class="picture-container_img_home">
+                    <img src="https://i.ibb.co/4NPFB5h/casa.png" alt="regresar a home">
+                </picture>
+            </a>
             <h1>
-                Figuras geometricas
+                Figuras geométricas
             </h1>
         
-            <p>Este es el Cálculo de algunas figuras Geométricas</p>
+            <p>Este es el cálculo de algunas figuras geométricas</p>
 
         </header>
     
         <section class="section-container_square_triangle_isoscelesTriangle_circle">
             <div class="cointer-square">
-                <h2>Calcula el area y perimetro de un cuadrado</h2>
+                <h2>Cálcula el área y perímetro de un cuadrado</h2>
                 <picture>
                     <img src="https://i.ibb.co/Mg6kVps/cuadrado.png" alt="imagen de un cuadrado">
                 </picture>
@@ -32,7 +37,7 @@
                     <label for="InputCuadrado" class="label-inputCuadrado"> <!-- con este atributo for, conectamos este texto label punga directamente la posiblidad de escribir en el input -->
                         Escribe cuanto mide cada lado de tu cuadrado:
                     </label>
-                    <input class="container-input_square" id="InputCuadrado" type="number" placeholder="Ingresar Numero">
+                    <input class="container-input_square" id="InputCuadrado" type="number" placeholder="Ingresar Número">
                     <div class="buttons-container_1">
                         <button class="button-perimetro_square" type="button" onclick="calcularPerimetroCuadrado()">
                             Calcular Perímetro
@@ -41,11 +46,10 @@
                         <button class="button-area_square" type="button" onclick="calcularAreaCuadrado()">
                             Calcular Área
                         </button>
-                    </div>
-                    
-            <div class="container-resultados_square">
-                <p id="resultso_square"></p>
-            </div>
+                    </div>   
+                    <div class="container-resultados_square">
+                        <p id="resultso_square"></p>
+                    </div> 
                 </form>            
             </div>
 
@@ -53,28 +57,33 @@
 
     
             <div class="cointer-triangle">
-                <h3>Calcula el area y perimetro de un Triangulo</h3>
+                <h3>Cálcula el área y perímetro de un triángulo</h3>
+                <picture>
+                    <img src="https://i.ibb.co/2cWTnj1/triangulo.png" alt="imagen de un triangulo">
+                </picture>
     
                 <form class="formTriangulo-container_label_input-button">
                     <label for="InputTriangulo-lado1"> <!-- con este atributo for, conectamos este texto label punga directamente la posiblidad de escribir en el input -->
-                        Escribe cuanto mide los lados y base del triangulo:
+                        Escribe cuanto mide los lados y base del triángulo:
                     </label>
-                    <label for="InpuTriangulo-lado1">
+                    <label for="label-InpuTriangulo_lado1">
                         Lado 1
                     </label>
-                    <input id="InpuTriangulo-lado1" type="number">
-                    <label for="InpuTriangulo-lado2">
+                    <input id="label-InpuTriangulo_lado1" placeholder="Ingresar Número"  type="number">
+                    <label for="label-InpuTriangulo_lado2">
                         Lado 2
                     </label>
-                    <input id="InpuTriangulo-lado2" type="number">
-                    <label for="InpuTriangulo-base">
+                    <input id="label-InpuTriangulo_lado2" placeholder="Ingresar Número"  type="number">
+                    <label for="label-InpuTriangulo_base">
                         Base
                     </label>
-                    <input id="InpuTriangulo-base" type="number">
+                    <input id="label-InpuTriangulo_base" placeholder="Ingresar Número"  type="number">
                     
-                    <button type="button" onclick="calcularPerimetroTriangulo()"> 
-                        Calcular el perimetro
-                    </button>   
+                    <div class="container-button_1_perimetro">
+                        <button type="button" class="button-perimetro_triangle" onclick="calcularPerimetroTriangulo()"> 
+                            Calcular el perímetro
+                        </button> 
+                    </div>  
 
                     <div class="container-resultado_perimetro_trinagle">
                         <p id="resultPerimetro_triangle"></p> 
@@ -82,24 +91,27 @@
     
                 </br>
                 <label for="InputTriangulo-altura"> <!-- con este atributo for, conectamos este texto label punga directamente la posiblidad de escribir en el input -->
-                    Escribe cuanto mide la altura y la base del triangulo:
+                    Escribe cuanto mide la altura y la base del triángulo:
                 </label>
                     <label for="InpuTriangulo-altura">
                         Altura
                     </label>
-                    <input id="InpuTriangulo-altura" type="number">
+                    <input id="InpuTriangulo-altura" placeholder="Ingresar Número" type="number">
                     <label for="InpuTriangulo-base2">
                         Base
                     </label>
-                    <input id="InpuTriangulo-base2" type="number">
-        
-                    <button type="button" onclick="calcularAreaTriangulo()">
-                        Calcular el area del Triangulo
-                    </button>
+                    <input id="InpuTriangulo-base2" placeholder="Ingresar Número" type="number">
+
+                    <div class="container-button_2_area">
+                        <button type="button" class="button-area_triangle" onclick="calcularAreaTriangulo()">
+                            Calcular el área del Triángulo
+                        </button>
+                    </div> 
 
                     <div class="container-resultado_area_trinagle">
                         <p id="resultArea_triangle"></p>
                     </div>
+
                 </form>                          
     
             </div>
@@ -109,28 +121,37 @@
         
     
             <div class="cointer-isoscelesTriangle">
-                <h4> Calcula la altura de un triangulo isósceles</h4>
+                <h4> Calcula la altura de un triángulo isósceles</h4>
+                <picture>
+                    <img src="https://i.ibb.co/0mhtCQp/triangulo-Isosceles.png" alt="imagen de un triangulo">
+                </picture>
     
                 <form class="formTrianguloIsosceles-container_label_input-button" >
                     <label for="InputTrianguloIsosceles-lado1"> <!-- con este atributo for, conectamos este texto label punga directamente la posiblidad de escribir en el input -->
-                        Escribe cuanto mide los lados y bases del triangulo Isósceles :
+                        Escribe cuanto mide los lados y bases del triángulo Isósceles :
                     </label>
                     <label for="InputTrianguloIsosceles-lado1">
                         Lado 1
                     </label>
-                    <input id="InputTrianguloIsosceles-lado1" type="number">
+                    <input id="InputTrianguloIsosceles-lado1"
+                    placeholder="Ingresar Número" type="number">
                     <label for="InputTrianguloIsosceles-lado2">
                         Lado 2
                     </label>
-                    <input id="InputTrianguloIsosceles-lado2" type="number">
+                    <input id="InputTrianguloIsosceles-lado2"
+                    placeholder="Ingresar Número" type="number">
                     <label for="InputTrianguloIsosceles-base">
                         Base
                     </label>
-                    <input id="InputTrianguloIsosceles-base" type="number">
+                    <input id="InputTrianguloIsosceles-base"
+                    placeholder="Ingresar Número" type="number">
                     
-                    <button type="button" onclick="calcularAlturaTrianguloIsosceles()"> 
-                        Calcular altura
-                    </button>
+                    <div class="container-button_altura">
+                        <button type="button" class="button-altura_TrianguloIsosceles" onclick="calcularAlturaTrianguloIsosceles()"> 
+                            Calcular altura
+                        </button>
+                    </div>
+
                     <div class="container-resultado_altura_Isosceles">
                         <p id="resultTrianguloIsosceles"> </p>
                     </div>
@@ -140,21 +161,29 @@
     
     
             <div class="container-circle">
-                <h5> Calcula el diametro, perimetro y area de un circulo</h5>
+                <h5> Cálcula el diámetro, perímetro y área de un círculo</h5>
+                <picture>
+                    <img src="https://i.ibb.co/DC939Jj/circulo.png" alt="imagen de un triangulo">
+                </picture>
                 <form class="formCincle-container_label_input-button" >
                     <label for="InputCirculo-diametro"> <!-- con este atributo for, conectamos este texto label punga directamente la posiblidad de escribir en el input -->
-                        Escribe cuanto mide el radio del circulo:
+                        Escribe cuanto mide el radio del círculo:
                     </label>
-                    <input id="InputCirculo-radio" type="number">
-                    <button type="button" onclick="calcularDiametroCirculo()"> 
-                        Calcular el diametro
-                    </button>
-                    <button type="button" onclick="calcularPerimetroCirculo()"> 
-                        Calcular el perimetro
-                    </button>
-                    <button type="button" onclick="calcularAreaCirculo()"> 
-                        Calcular el area
-                    </button> 
+                    <input id="InputCirculo-radio" placeholder="Ingresar Número" class="container-input_circle" type="number">
+                    <div class="container-buttons_diametro_perimetro_circulo">
+                        <button class="button-diametro_circle" type="button" onclick="calcularDiametroCirculo()"> 
+                            Calcular el diámetro
+                        </button>
+                        <button class="button-perimetro_circle" type="button" onclick="calcularPerimetroCirculo()"> 
+                            Calcular el perímetro
+                        </button>
+                    </div>
+                    <div class="container-button_area_circle">
+                        <button class="button-area_circle" type="button" onclick="calcularAreaCirculo()"> 
+                            Calcular el área
+                        </button> 
+                    </div>
+
                     <div class="container-resultado_diametro_perimetro_area_circle">
                         <p id="resultsCicle"></p>
                     </div>
