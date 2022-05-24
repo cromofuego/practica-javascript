@@ -1,0 +1,507 @@
+*{
+    background-color: #f1ece4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #021926;
+    --secondary-color: #721B08;
+    --option-color-1: #114B55;
+    --option-color-2: #7E6525;
+    --option-color-3: #C6CC7B;   
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+.section-container_promedio_moda_mediana_armonica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header > p {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 3.8rem;
+    text-align: center;
+}
+.a-container_picture_home {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 20%;
+    border: solid var(--primary-color);
+    overflow: hidden;
+}
+.picture-container_img_home > img {
+    width: 100%;
+    height: 100%;
+}
+/*MODA*/
+.container-promedio_h1_form {
+    max-width: 30.0rem;
+    height: auto;
+    overflow: hidden;
+    border: solid var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-promedio_h1_form > h1 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formPromedio-container_label_input_buttons_p {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formPromedio-container_label_input_buttons_p > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-promedio {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-promedio:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;  
+}
+.input-promedio::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.container-buttons_promedio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-promedio_agregar {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-promedio_datos_agregados {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.container-promedio_p > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;    
+}
+/*MODA*/
+.container-moda_h2_form {
+    max-width: 30.0rem;
+    height: auto;
+    overflow: hidden;
+    border: solid var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-moda_h2_form > h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formModa-container_label_input_buttons_p {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formModa-container_label_input_buttons_p > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-moda {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-moda:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;  
+}
+.input-moda::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.container-buttons_moda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-moda_agregar {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-moda_datos_agregados {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-moda_nuevo_calculo {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.container-moda_p > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;    
+}
+/*MEDIANA*/
+.container-mediana_h3_form {
+    max-width: 30.0rem;
+    height: auto;
+    overflow: hidden;
+    border: solid var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-mediana_h3_form > h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formMediana-container_label_input_buttons_p {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formMediana-container_label_input_buttons_p > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-mediana {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-mediana:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;  
+}
+.input-mediana::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.container-buttons_mediana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-mediana_agregar {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-mediana_datos_agregados {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-mediana_nuevo_calculo {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.container-mediana_p > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;    
+}
+/*ARMONICA*/
+.container-armonica_h4_form {
+    max-width: 30.0rem;
+    height: auto;
+    overflow: hidden;
+    border: solid var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-armonica_h4_form > h4 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formArmonica-container_label_input_buttons_p {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formArmonica-container_label_input_buttons_p > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-armonica {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-armonica:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;  
+}
+.input-armonica::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.container-buttons_armonica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-armonica_agregar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-armonica_datos_agregados {
+    margin-bottom: 1rem;
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.button-armonica_nuevo_calculo {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.container-armonica_p > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;    
+}
+@media (min-width: 700px) {
+    .section-container_promedio_moda_mediana_armonica {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+    .container-moda_h2_form {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .container-promedio_h1_form {
+        margin-left: 3rem;
+    }
+    .container-armonica_h4_form {
+        justify-content: space-around;
+        margin-left: 3rem;        
+    }
+}
+@media (min-width: 1000px) {
+    .a-container_picture_home {
+        margin-top: -1rem;
+    }
+    header > p {
+        margin-top: 2rem;
+        font-size: 5.8rem;
+    }
+    .section-container_promedio_moda_mediana_armonica {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .container-promedio_h1_form {
+        justify-content: space-around;      
+
+    }
+    .container-mediana_h3_form {
+        justify-content: space-around;      
+
+    }
+    .container-armonica_h4_form {
+        justify-content: space-around;      
+    }
+    .container-promedio_h1_form > h1 {
+        font-size: 4rem;
+    }
+    .container-moda_h2_form > h2 {
+        font-size: 4rem;
+    }
+    .container-mediana_h3_form > h3 {
+        font-size: 4rem;
+    }
+    .container-armonica_h4_form > h4 {
+        font-size: 4rem;
+    }
+}
+
+

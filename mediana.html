@@ -7,29 +7,35 @@
     <title>Mediana</title>
 </head>
 <body>
-    <h1>Mediana</h1>
     
-    <section>
+    <div class="container-mediana_h3_form">
+
+        <h3>Mediana</h3>  
+
         <form>
             <label for="input-add">
                 Escribe los datos para ser agregados aqui :
             </label>
 
-            <input id="input-add" type="number">
+            <input id="input-add" type="number" placeholder="Ingresar Número">
 
-            <button type="button" onclick="agregarDato()"> 
-                Agregar
-            </button>
-            <button type="button" onclick="calcularMediana()"> 
-                Calcular la mediana de todos tus datos agregados
-            </button>
+            <div class="container-buttons_mediana">
+                <button class="button-mediana_agregar"  type="button" onclick="agregarDato()"> 
+                    Agregar
+                </button>
+                <button class="button-mediana_datos_agregados" type="button" onclick="calcularMediana()"> 
+                    Calcular la mediana de todos tus datos agregados
+                </button>
+            </div>
+            
+            <div class="container-mediana_p">
+                <p id="resultadoCalculoMediana"></p>
+                <p id="datosAgregadosUser"></p>
+            </div>
+
         </form>
 
-        <p id="resultadoCalculoMediana"></p>
-
-        <p id="datosAgregadosUser"></p>
-
-    </section>
+    </div>
 
     <script src="./mediana.js"></script>
 </body>

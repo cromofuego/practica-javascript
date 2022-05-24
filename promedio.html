@@ -7,33 +7,45 @@
     <title>promedio</title>
 </head>
 <body>
+
+
+
+<div class="container-promedio_h1_form">
+
     <h1>Promedio</h1>
 
-    <section>
-        <form>
-            <label for="input-add">
-                Escribe los datos para ser agregados aqui :
-            </label>
+    <form class="formPromedio-container_label_input_buttons_p">
 
-            <input id="input-add" type="number">
+        <label for="input-add">
+            Escribe los datos para ser agregados aqui :
+        </label>
 
-            <button type="button" onclick="agregarDato()"> 
+        <input id="input-add" type="number" placeholder="Ingresar Número">
+
+        <div class="container-buttons_promedio">
+
+            <button class="button-promedio_agregar" type="button" onclick="agregarDato()"> 
                 Agregar
             </button>
-            <button type="button" onclick="calcularMediaAritmetica()"> 
+
+            <button class="button-promedio_datos_agregados" type="button" onclick="calcularMediaAritmetica()"> 
                 Calcular promedio de todos los datos agregados
             </button>
-        </form>
 
-        <p id="resultadoCalculoPromedio">
+        </div>
 
-        </p>
+        <div class="container-promedio_p">
+            <p id="resultadoCalculoPromedio"></p>
+            <p id="datosAgregadosUser"></p>
+        </div>   
+        
+    </form>
 
-        <p id="datosAgregadosUser">
+</div>
 
-        </p>
 
-    </section>
+
+
 
     
 

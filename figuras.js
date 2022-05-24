@@ -180,7 +180,7 @@ function calcularAreaCuadrado () {
     if (!valueNumber) {
         resultso_square.innerText = `Por favor ingresar un número`;
     } else {
-        resultso_square.innerText = `El áre es: \n ${area}. Recuerda que al ser áre, la unidad de medida, esta elevado al cubo(^2)`; 
+        resultso_square.innerText = `El área es: ${area}. \n  Recuerda que al ser área, la unidad de medida, esta elevado al cubo(^2)`; 
     }
 
 };

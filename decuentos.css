@@ -1,0 +1,263 @@
+*{
+    background-color: #f1ece4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #021926;
+    --secondary-color: #721B08;
+    --option-color-1: #114B55;
+    --option-color-2: #7E6525;
+    --option-color-3: #C6CC7B;   
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+.section {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    text-align: center;
+}
+.header > h1 {
+    margin-top: 6.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 3.8rem;
+    text-align: center;
+}
+.header > p {
+    color: #05314C;
+    margin-top: 1.0rem;
+    font-size: 2.0rem;
+}
+.a-container_picture_home {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 20%;
+    border: solid var(--primary-color);
+    overflow: hidden;
+}
+.picture-container_img_home > img {
+    width: 100%;
+    height: 100%;
+}
+/*Estilos Form 1*/
+.container-h2_form {
+    max-width: 30.0rem;
+    height: auto;
+    overflow: hidden;
+    border: solid var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.0rem 1.5rem;
+}
+.container-h2_form > h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formDiscount-container_label_input_button {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formDiscount-container_label_input_button > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-price_product {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-price_product_discount {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem; 
+}
+.input-price_product:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;  
+}
+.input-price_product_discount:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;
+}
+.input-price_product::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.input-price_product_discount::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);    
+}
+.container-button_discount {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-discount {
+    color:  #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 25.0rem;
+    height: 6.5rem;
+    padding: 2%;
+}
+.container-resultP > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;    
+}
+/*Estilos Form 2*/
+.formDiscount-container_label_input_button > h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.formDiscountCopunpons-container_label_input_button {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    max-width: 30.0rem;
+    margin: 1.0rem 1.5rem;
+}
+.formDiscountCopunpons-container_label_input_button > label {
+    padding: 0;
+    color: var(--option-color-1);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.input-price_product_discount_coupon {
+    color: #ede7dd; 
+    background-color: #721B08;
+    border: 0;
+    outline: 0px; 
+    text-align: center;
+    height: 6rem;
+    font-size: 3rem;
+    width: 25.0rem;
+    border-radius: 1rem;
+}
+.input-price_product_discount_coupon:focus {
+    box-shadow: rgba(114, 27, 8, 0.4) 4px -1px 28px 1px;
+}
+.input-price_product_discount_coupon::placeholder {
+    padding-left: 2%;
+    color: rgba(210, 215, 211, 0.2);
+}
+.container-button_discount_coupon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.button-discount_counpon {
+    color: #ede7dd;
+    cursor: pointer;
+    border: none; 
+    background-color: #186977;
+    border-radius: 25px;
+    font-size: 2.4rem;
+    max-width: 25.0rem;
+    width: 100%;    
+    height: 7.0rem;
+    padding: 2%;
+}
+.container-resultPCoupon > p {
+    color: #43894F;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem; 
+}
+@media (min-width: 1000px) {
+    .header > h1 {
+        margin-top: 0;
+        font-size: 5.8rem;
+    }
+    .container-h2_form {
+        width: auto;
+        max-width: none;
+    }
+    .container-h2_form > h2 {
+        font-size: 3.4rem;
+    }
+    .formDiscount-container_label_input_button > h3 {
+        font-size: 3.4rem;
+    }
+    .formDiscount-container_label_input_button {
+        max-width: none;
+    }
+    .input-price_product {
+        width: 100%;
+    }
+    .input-price_product_discount {
+        width: 100%;
+    }
+    .container-button_discount {
+        width: 100%;
+    }
+    .button-discount {
+        height: 5.5rem;
+        max-width: none;
+        width: 100%;
+    }
+    .input-price_product_discount_coupon {
+        width: 100%;
+    }
+    .container-button_discount_coupon {
+        width: 100%;
+    }
+    .button-discount_counpon {
+        height: 5.5rem;
+        max-width: none;
+        width: 100%;
+    }
+
+}

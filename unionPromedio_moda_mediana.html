@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleUnionPromedioModaMedianaArmonica.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+
+        <a href="./index.html" class="a-container_picture_home" >
+            <picture class="picture-container_img_home">
+                <img src="https://i.ibb.co/4NPFB5h/casa.png" alt="regresar a home">
+            </picture>
+        </a>
+    
+        <header>
+            <p>
+                Formulas
+            </p>    
+        </header>  
+    
+        <section class="section-container_promedio_moda_mediana_armonica">
+
+            <!-- Inicia promedio -->
+
+            <div class="container-promedio_h1_form">
+
+                <h1>Promedio</h1>
+            
+                <form class="formPromedio-container_label_input_buttons_p">
+            
+                    <label for="input-add_promedio">
+                        Escribe los datos para ser agregados aqui :
+                    </label>
+            
+                    <input class="input-promedio" id="input-add_promedio" type="number" placeholder="Ingresar Número">
+            
+                    <div class="container-buttons_promedio">
+            
+                        <button class="button-promedio_agregar" type="button" onclick="agregarDatoPromedio()"> 
+                            Agregar
+                        </button>
+            
+                        <button class="button-promedio_datos_agregados" type="button" onclick="calcularMediaAritmetica()"> 
+                            Calcular promedio
+                        </button>
+            
+                    </div>
+                    
+            
+                    <div class="container-promedio_p">
+                        <p id="resultadoCalculoPromedio"></p> 
+                        <p id="datosAgregadosUserPromedio"></p>                                               
+                    </div>   
+                    
+                </form>
+                
+            
+            </div>
+            
+
+            <!-- Inicia moda -->
+
+            <div class="container-moda_h2_form">
+
+                <h2>Moda</h2>
+        
+                <form class="formModa-container_label_input_buttons_p">
+                    <label for="input-add_moda">
+                        Escribe los datos para ser agregados aqui :
+                    </label>
+        
+                    <input class="input-moda" id="input-add_moda" type="number" placeholder="Ingresar Número">
+        
+                    <div class="container-buttons_moda">
+        
+                        <button class="button-moda_agregar" type="button" onclick="agregarDatoModa()"> 
+                            Agregar
+                        </button>
+                        <button class="button-moda_datos_agregados" type="button" onclick="calcularModa()"> 
+                            Calcular moda
+                        </button>
+                        <button class="button-moda_nuevo_calculo" type="submit"> 
+                            Borrar todo e iniciar un nuevo cálculo
+                        </button>
+        
+                    </div>
+        
+                    <div class="container-moda_p">    
+                        <p id="resultModa"></p>     
+                        <p id="datosAgregadosUserModa"></p>                               
+                    </div>
+                </form>
+        
+            </div>
+
+            <!-- Inicia mediana -->   
+
+            <div class="container-mediana_h3_form">
+
+                <h3>Mediana</h3>  
+        
+                <form class="formMediana-container_label_input_buttons_p">
+                    <label for="input-add_mediana">
+                        Escribe los datos para ser agregados aqui :
+                    </label>
+        
+                    <input class="input-mediana" id="input-add_mediana" type="number" placeholder="Ingresar Número">
+        
+                    <div class="container-buttons_mediana">
+                        <button class="button-mediana_agregar"  type="button" onclick="agregarDatoMediana()"> 
+                            Agregar
+                        </button>
+                        <button class="button-mediana_datos_agregados" type="button" onclick="calcularMediana()"> 
+                            Calcular mediana
+                        </button>
+                    </div>
+                    
+                    <div class="container-mediana_p">
+                        <p id="resultadoCalculoMediana"></p>
+                        <p id="datosAgregadosUserMediana"></p>
+                    </div>
+        
+                </form>
+        
+            </div>
+
+            <!-- Inicia armonica -->   
+
+            <div class="container-armonica_h4_form">
+        
+                <h4>Media Armónica</h4>
+                
+                <form class="formArmonica-container_label_input_buttons_p">
+                    <label for="input-add_armonica">
+                        Escribe los datos para ser agregados aqui :
+                    </label>
+        
+                    <input class="input-armonica" id="input-add_armonica" type="number" placeholder="Ingresar Número">
+        
+                    <button class="button-armonica_agregar" type="button" onclick="agregarDatoArmonica()"> 
+                        Agregar
+                    </button>
+                    <button class="button-armonica_datos_agregados" type="button" onclick="calcularMediaArmonica()"> 
+                        Calcular media Armónica
+                    </button>
+        
+                    <div class="container-armonica_p">
+                        <p id="resultadoCalculoMediaArmonica"></p>
+                        <p id="datosAgregadosUserArmonica"></p>
+                    </div>  
+                </form>
+        
+            </div>
+    
+        </section>
+
+
+
+    </div>
+
+
+
+    <script src="./promedio.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./mediaArmonica.js"></script>
+    <script src="./moda.js"></script>
+
+</body>
+</html>

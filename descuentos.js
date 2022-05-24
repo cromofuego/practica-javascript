@@ -14,6 +14,14 @@ const coupons = [
         nombre: "es_un_secreto",
         descuento: 25,
     },
+    {
+        nombre: "cupon01",
+        descuento: 15,
+    },
+    {
+        nombre: "cuponsecreto",
+        descuento: 25,
+    },
 ];
 
 
@@ -28,29 +36,37 @@ const isCouponValueValid = function (coupon) {
 
 
 function buttonPriceDiscountCoupon () {
-    const userCoupon = coupons.find(isCouponValueValid);
+    const userCoupon = coupons.find(isCouponValueValid); 
+
+    const inputCoupon = document.getElementById("inputCoupons");
+    const valueCoupon = inputCoupon.value;  
+
+    const inputPrice = document.getElementById("inputPrice");
+    const priceValue = inputPrice.value;
+    const priceValueNumber = parseInt(priceValue);
     
-    if (!userCoupon) {
-        console.log(userCoupon);
-        const inputCoupon = document.getElementById("inputCoupons");
-        const valueCoupon = inputCoupon.value;
-        console.log(valueCoupon);
-        console.log(userCoupon)
-        const resultCupon = document.getElementById("resultCupon");
-        resultCupon.innerText = "El cupón " + valueCoupon + " no es válido";
+    if (!priceValueNumber) { 
+        resultCoupon.innerText = `Por favor ingresar el precio del producto tambien`;
+    }
+    else if (!valueCoupon) {
+        resultCoupon.innerText = `Por favor ingresa tu cupon`;
+    }
+    else if (!userCoupon) {
+        resultCoupon.innerText = "El cupón " + valueCoupon + " no es válido";
     } else {
-        const inputPrice = document.getElementById("inputPrice");
-        const priceValue = inputPrice.value;
-        const priceValueNumber = parseInt(priceValue);
+    const inputPrice = document.getElementById("inputPrice");
+    const priceValue = inputPrice.value;
+    const priceValueNumber = parseInt(priceValue);
 
-        const userDescuento = userCoupon.descuento; // estoy retomando el re sultado de userCoupon y como ya localizo con find, tomo solo el descuento de ese resultado 
-        console.log(userDescuento);
-        const precioDescuentoCupon = calcularPrecioConDescuento(priceValueNumber,userDescuento);
+    const userDescuento = userCoupon.descuento; // estoy retomando el re sultado de userCoupon y como ya localizo con find, tomo solo el descuento de ese resultado 
+    console.log(userDescuento);
+    const precioDescuentoCupon = calcularPrecioConDescuento(priceValueNumber,userDescuento);
 
-        const resultCupon = document.getElementById("resultCupon");
-        resultCupon.innerText = "El descuento del cupon es de un "
+
+      //  const resultCupon = document.getElementById("resultCupon");
+        resultCoupon.innerText = "El descuento del cupon es de un "
         + userDescuento 
-        + " %. " 
+        + " %. \n" 
         + " Y tu producto queda en : $"+ precioDescuentoCupon;
     }; 
 };
@@ -75,11 +91,12 @@ function buttonPriceDiscount() {
     const discountValueNumber = parseInt(discountValue);
 
     const precioConDescuento = calcularPrecioConDescuento(priceValueNumber,discountValueNumber);
-
-    const resultP = document.getElementById("resultP");
-    resultP.innerText = "El precio con descuento es $" + precioConDescuento;
-
-
+    if ((!priceValueNumber) || (!discountValueNumber) ) {
+        resultP.innerText = `Por favor ingresar los números necesarios`;
+    } else {
+        const resultP = document.getElementById("resultP");
+        resultP.innerText = "El precio con descuento es $" + precioConDescuento;
+    }
 };
 
 

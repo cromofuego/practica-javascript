@@ -1,24 +1,32 @@
 
-const lista1 = [1 , 1 , 1 , 4 , 4 , 4 , 8 , 8 , 8 , 2 , 2 , 3 , 3 , 5];
+
 const lista2 = [120, 300, 125, 50, 40, 35, 300, 15, 15, 120, 1250, 125, 2, 5, 7, 300, 2 , 5, 5, 5, 40, 40, 40,];
 
 
-const datosAgregados = [];
+const datosAgregadosModa = [];
 
-function agregarDato() {
-    let contador = datosAgregados.length + 1;    
+function agregarDatoModa() {
+    let contador = datosAgregadosModa.length + 1;    
     
-        const dato = document.getElementById("input-add");
+        const dato = document.getElementById("input-add_moda");
         const datoValue = dato.value;
         const datoValueNumber = parseInt(datoValue);
 
         for(let i = 0; i < 1; i++) {
-            datosAgregados.push(datoValueNumber);
-        };        
+            if(datoValueNumber) {
+                datosAgregadosModa.push(datoValueNumber);
+            }
+        };     
+        
+        const valorError = "Valor no agregado";
 
-        let datoAgregado = datosAgregados.find( elemento => elemento === datoValueNumber);
+        let datoAgregado = datosAgregadosModa.find( elemento => elemento === datoValueNumber);
+        if (!datoValueNumber) {
+            datosAgregadosUserModa.innerText += `El dato ${contador} es: ${valorError} \n`;
+        } else {
+            datosAgregadosUserModa.innerText += `El dato ${contador} es: ${datoAgregado} \n`; 
+        }
 
-        datosAgregadosUser.innerText += `El dato ${contador} que es igual a ${datoAgregado} ha sido agregado \n`; 
         
 };
 
@@ -26,7 +34,7 @@ function calcularModa() {
 
             const objectCount = {};
 
-            datosAgregados.map(
+            datosAgregadosModa.map(
             function (elemento) { //recibo en elemento, el elemento de cada una de las iteraciones
                 if(objectCount[elemento]){// le digo si este elemento que estoy recibiendo por cada iteracion ya existe, {entonces a esa misma posicion objectCount[elemento], le sumare 1 mas}
                     objectCount[elemento] += 1; 
@@ -50,13 +58,17 @@ function calcularModa() {
         };
         const numerosModa = multiModa.map( x =>  x[0]) // le digo que me cree un array pero solo con la posicion de cada array de multiModa con la posicion 0 osea la primera que es la que estoy buscando.
 
-        for(let i = 0; i <= numerosModa.length - 1; i++) {
-            let moda =  numerosModa[i];
-            console.log(moda);
-            resultModa.innerText = `La moda de todos tus datos ingresados es : \n `; 
-            resultModa1.innerText += ` ${moda} ,`;
-        };
+        
+        if(datosAgregadosModa.length === 0){
+            datosAgregadosUserModa.innerText = `No se ingreso números \n`;
+        } else {
+            for(let i = 0; i <= numerosModa.length - 1; i++) {
+                let moda =  numerosModa[i];
+                console.log(moda);
+                resultModa.innerText = `La moda de todos tus datos ingresados es : ${moda} \n `; 
+            }
 
+        }; 
 };
 
 

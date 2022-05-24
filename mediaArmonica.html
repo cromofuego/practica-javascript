@@ -7,30 +7,34 @@
     <title>Media Armonica</title>
 </head>
 <body>
-    <h1>Media Armonica</h1>
 
-    <section>
+    <div class="container-armonica_h4_form">
+        
+        <h4>Media Armonica</h4>
+        
         <form>
             <label for="input-add">
                 Escribe los datos para ser agregados aqui :
             </label>
 
-            <input id="input-add" type="number">
+            <input id="input-add" type="number" placeholder="Ingresar Número">
 
-            <button type="button" onclick="agregarDato()"> 
+            <button class="button-armonica_agregar" type="button" onclick="agregarDato()"> 
                 Agregar
             </button>
-            <button type="button" onclick="calcularMediaArmonica()"> 
+            <button class="button-armonica_datos_agregados" type="button" onclick="calcularMediaArmonica()"> 
                 Calcular la media Armónica de todos tus datos agregados
             </button>
+
+            <div class="container-armonica_p">
+                <p id="resultadoCalculoMediaArmonica"></p>
+                <p id="datosAgregadosUser"></p>
+            </div>  
         </form>
 
-        <p id="resultadoCalculoMediaArmonica"></p>
+    </div>
 
-        <p id="datosAgregadosUser"></p>
 
-    </section>
-    
 
     <script src="./mediaArmonica.js"></script>
 </body>

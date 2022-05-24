@@ -4,52 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Procentajes y descuentos</title>
+    <link rel="stylesheet" href="./decuentos.css">
 </head>
 <body>
-<header>
-    <h1>
-        Procentajes y descuentos
-    </h1>
-    <p>Calculando descuentos</p>
-</header>
 
-<section>
-    <h2>Calcula el precio a pagar de tus productos con el descuento</h2>
+    <div class="main-container">
 
-    <form>
-        <label for="inputPrice">Escribe el precio de tu producto: </label>
-        <input id="inputPrice" type="number">
+        <a href="./index.html" class="a-container_picture_home" >
+            <picture class="picture-container_img_home">
+                <img src="https://i.ibb.co/4NPFB5h/casa.png" alt="regresar a home">
+            </picture>
+        </a>
 
-
-        <label for="inputDiscount">Escribe el descuento de tu producto: </label>
-        <input id="inputDiscount" type="number">
-
-        <button type="button" onclick="buttonPriceDiscount()"> <!-- permite llamar la funcion -->
-            Calcular el precio con descuento
-        </button>
+        <header class="header">
+            <h1>
+                Procentajes y descuentos
+            </h1>
+            <p>Calculando descuentos</p>
+        </header>
         
-        <p id="resultP"></p>
+        <section class="section">
 
-    </form>
+            <div class="container-h2_form">
 
-    <h3>Calcular el precio con el descuento del cupon</h3>   
+                <h2>Calcula el precio a pagar de <br /> tus productos con el descuento (en Dólares)</h2>
+        
+                <form  class="formDiscount-container_label_input_button">
 
-    <form>
+                    <label for="inputPrice">Escribe el precio de tu producto: </label>
+                    <input class="input-price_product" id="inputPrice" type="number" placeholder="Ingresar Número">
+            
+            
+                    <label for="inputDiscount">Escribe el descuento de tu producto: </label>
+                    <input class="input-price_product_discount" id="inputDiscount" type="number" placeholder="Ingresar Número">
 
-        <label for="inputCoupons">Aplica el cupon escribiendolo aqui :</label>
-        <input id="inputCoupons" type="text">
+                    <div class="container-button_discount">
 
-        <button type="button" onclick="buttonPriceDiscountCoupon()"> <!-- permite llamar la funcion -->
-            Calcular el precio con descuento
-        </button>       
+                        <button class="button-discount" type="button" onclick="buttonPriceDiscount()"> <!-- permite llamar la funcion -->
+                            Calcular descuento
+                        </button>
 
-        <p id="resultCupon"></p>
+                    </div>  
+                    
+                    <div class="container-resultP">
+                        <p id="resultP"></p>
+                    </div>  
 
-    </form>
 
-</section>
+                    <h3>Calcular el precio con el descuento del cupon</h3>           
+                
+                        <label for="inputCoupons">Aplica el cupon escribiendolo aqui :</label>
+                        <input class="input-price_product_discount_coupon" id="inputCoupons" type="text" placeholder="Ingresar Número">
+    
+                        <div class="container-button_discount_coupon">
+    
+                            <button class="button-discount_counpon" type="button" onclick="buttonPriceDiscountCoupon()"> <!-- permite llamar la funcion -->
+                                Calcular descuento con cupon
+                            </button> 
+    
+                        </div>  
 
+                    <div class="container-resultPCoupon">
+                        <p id="resultCoupon"></p>
+                    </div> 
+
+
+                </form>
+
+            </div>
+            
+        </section>        
+    </div>
     
     <script src="./descuentos.js"></script>
 </body>
