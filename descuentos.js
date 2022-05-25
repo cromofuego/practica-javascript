@@ -22,6 +22,10 @@ const coupons = [
         nombre: "cuponsecreto",
         descuento: 25,
     },
+    {
+        nombre: "karol",
+        descuento: 35,
+    },
 ];
 
 
